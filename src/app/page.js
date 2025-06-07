@@ -40,7 +40,7 @@ export default function Home() {
           Be the first to thrift with a vibe. Join our waitlist or co-build the future of fashion.
         </p>
         <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-zinc-800 transition">
-          Request Early Access
+        Email us: Hello@VibeSwipe.app
         </button>
       </section>
 
