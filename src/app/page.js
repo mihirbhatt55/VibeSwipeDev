@@ -1,103 +1,61 @@
-import Image from "next/image";
+// src/app/page.js
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-gradient-to-br from-zinc-900 via-zinc-950 to-black text-white font-sans">
+      <header className="text-center py-20 bg-gradient-to-r from-yellow-400 via-pink-500 to-violet-600">
+      <div className="flex justify-center py-6">
+      <img
+  src="/vibeswipe-logo.png"
+  alt="VibeSwipe Logo"
+  className="h-32 w-auto mx-auto mt-10 transition-transform duration-500 ease-in-out hover:scale-110"
+/>
+</div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  <h1 className="text-6xl font-extrabold text-white drop-shadow-lg">VibeSwipe</h1>
+  <p className="text-xl mt-4 text-white/90">Thrift smarter. Match by vibe. Swap sustainably.</p>
+</header>
+
+
+      <section className="max-w-4xl mx-auto px-6 py-20 bg-white/5 backdrop-blur-sm rounded-xl shadow-inner">
+        <h2 className="text-3xl font-semibold text-yellow-400 mb-6 text-center">
+          What is VibeSwipe?
+        </h2>
+        <p className="text-zinc-300 mb-8 text-lg text-center leading-relaxed">
+          A next-gen fashion marketplace where you buy, sell, or swap thrifted clothing using swipe-based matching.
+          AI-generated avatars help visualize fit and style. It’s like Tinder meets Depop — smarter, and sustainable.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Feature icon="🧍" text="AI-powered avatars to preview fit & style" />
+          <Feature icon="🤝" text="Swipe-to-match with people who share your vibe & size" />
+          <Feature icon="📦" text="List, auction, or trade with ease" />
+          <Feature icon="🛍️" text="Future: Connect with local thrift stores and events" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      <section className="bg-yellow-400 text-black py-20 text-center mt-20">
+        <h2 className="text-4xl font-bold mb-4">🚀 Coming Soon</h2>
+        <p className="text-lg mb-6">
+          Be the first to thrift with a vibe. Join our waitlist or co-build the future of fashion.
+        </p>
+        <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-zinc-800 transition">
+          Request Early Access
+        </button>
+      </section>
+
+      <footer className="text-center py-8 text-zinc-400 text-sm mt-20">
+        © 2025 VibeSwipe — Built with ❤️ for thrift & tech.
       </footer>
+    </main>
+  );
+}
+
+function Feature({ icon, text }) {
+  return (
+    <div className="flex items-start gap-4 bg-zinc-800/50 p-4 rounded-lg shadow hover:shadow-lg transition">
+      <div className="text-3xl">{icon}</div>
+      <p className="text-zinc-300">{text}</p>
     </div>
   );
 }
